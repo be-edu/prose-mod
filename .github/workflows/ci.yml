@@ -1,7 +1,7 @@
 name: build-prose-mod
 on: [push]
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code from git repository
@@ -19,4 +19,4 @@ jobs:
         run: pwd
 
       - name: Build
-        run: go build ./prose -o artifact
+        run: go build ./prose
