@@ -21,18 +21,5 @@ jobs:
       - name: Build
         run: go build ./prose
 
-      - name: Run unit tests
-        run: go test ./prose -v
-
-      - name: Generate coverage report
-        run: |
-          go test ./prose -coverprofile=coverage.xml -covermode=atomic
-
-      - name: Print prose directory
-        run: ls -l ./prose
-
-      - name: Upload coverage report
-        uses: codecov/codecov-action@v3
-        with:
-          version: "v0.1.15"
-          verbose: true # optional (default = false)
+      - name: Run unit tests and generate coverage report
+        run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
