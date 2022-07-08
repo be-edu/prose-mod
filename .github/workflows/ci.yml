@@ -22,4 +22,7 @@ jobs:
         run: go build ./prose
 
       - name: Run unit tests and generate coverage report
-        run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
+        run: go test ./prose -v -coverprofile=coverage.out -covermode=atomic
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
