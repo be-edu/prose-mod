@@ -26,7 +26,7 @@ jobs:
 
       - name: Generate coverage report
         run: |
-          go test ./prose -coverprofile=coverage.txt -covermode=atomic
+          go test ./prose -coverprofile=coverage.xml -covermode=atomic
 
       - name: Print prose directory
         run: ls -l ./prose
