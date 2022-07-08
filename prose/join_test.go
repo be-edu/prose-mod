@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestOneElement2(t *testing.T) {
+func TestOneElement(t *testing.T) {
 	// Arrange
 	//
 	list := []string{"apple"}
@@ -22,7 +22,7 @@ func TestOneElement2(t *testing.T) {
 	}
 }
 
-func TestTwoElements2(t *testing.T) {
+func TestTwoElements(t *testing.T) {
 	// Arrange
 	//
 	list := []string{"apple", "orange"}
@@ -39,7 +39,7 @@ func TestTwoElements2(t *testing.T) {
 	}
 }
 
-func TestThreeElements2(t *testing.T) {
+func TestThreeElements(t *testing.T) {
 	// Arrange
 	//
 	list := []string{"apple", "orange", "pear"}
