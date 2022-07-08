@@ -28,6 +28,9 @@ jobs:
         run: |
           go test ./prose -coverprofile=coverage.txt -covermode=atomic
 
+      - name: Print prose directory
+        run: ls -l ./prose
+
       - name: Upload coverage report
         uses: codecov/codecov-action@v3
         with:
