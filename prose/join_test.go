@@ -5,6 +5,23 @@ import (
 	"testing"
 )
 
+func TestZeroElement(t *testing.T) {
+	// Arrange
+	//
+	list := []string{}
+	want := ""
+
+	// Act
+	//
+	got := JoinWithCommas(list)
+
+	// Assert
+	//
+	if got != want {
+		t.Errorf(errorString(list, got, want))
+	}
+}
+
 func TestOneElement(t *testing.T) {
 	// Arrange
 	//
