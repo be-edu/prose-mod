@@ -18,7 +18,7 @@ func TestZeroElement(t *testing.T) {
 	// Assert
 	//
 	if got != want {
-		t.Errorf(errorString(list, got, want))
+		t.Error(errorString(list, got, want))
 	}
 }
 
@@ -35,7 +35,7 @@ func TestOneElement(t *testing.T) {
 	// Assert
 	//
 	if got != want {
-		t.Errorf(errorString(list, got, want))
+		t.Error(errorString(list, got, want))
 	}
 }
 
@@ -52,7 +52,7 @@ func TestTwoElements(t *testing.T) {
 	// Assert
 	//
 	if got != want {
-		t.Errorf(errorString(list, got, want))
+		t.Error(errorString(list, got, want))
 	}
 }
 
@@ -69,7 +69,7 @@ func TestThreeElements(t *testing.T) {
 	// Assert
 	//
 	if got != want {
-		t.Errorf(errorString(list, got, want))
+		t.Error(errorString(list, got, want))
 	}
 }
 
