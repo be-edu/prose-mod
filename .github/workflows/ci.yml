@@ -25,4 +25,4 @@ jobs:
         run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
 
       - name: Ping
-        run: ping google.com
+        run: ping -c 4 google.com
