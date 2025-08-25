@@ -23,6 +23,3 @@ jobs:
 
       - name: Run unit tests and generate coverage report
         run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
-
-      - name: Ping
-        run: ping -c 4 google.com
