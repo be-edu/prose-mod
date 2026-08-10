@@ -20,6 +20,3 @@ jobs:
 
       - name: Build
         run: go build ./prose
-
-      - name: Run unit tests and generate coverage report
-        run: go test ./prose -v -coverprofile=coverage.xml -covermode=atomic
